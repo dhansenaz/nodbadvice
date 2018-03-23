@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import './inputsubmit.css'
 
 class InputSubmit extends Component {
+
+
+  
   render() {
     
     return (
       <div className="inputsubmit">
-       <button className="submitbutton">Get Advice</button>
+       <button onClick = {this.props.handleSubmit} className="submitbutton">Get Advice</button>
+
       </div>
     );
   }

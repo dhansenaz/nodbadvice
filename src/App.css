@@ -11,3 +11,9 @@
 .mid >div{
     display:flex;
 }
+.advice-display{
+    background-color: red;
+    height:250px;
+    width:500px;
+    flex:1;
+}

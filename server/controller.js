@@ -24,43 +24,63 @@ let advice= [
     title: "In love",
     advice: "She loves you like a fat kid loves cake."
   },
+  
   {
     id:9,
-    category: "Roullete",
-    title: "Not really",
-    advice: "Finding someone who cares will serve you well"
-  },
-  {
-    id:10,
     category: "Roullete",
     title: "In love",
     advice: "Dance like no one is watching. Because they're not. They're checking their phones"
   },
   {
-    id:11,
+    id:10,
     category: "Roullete",
     title: "Selfie",
     advice: "You may be the ugly one if you get handed the camera everytime there is a group photo"
   },
   {
-    id:12,
+    id:11,
     category: "Roullete",
     title: "Waffles",
-    advice: "Yes, waffles are pancakes with abs. So yeah, eat up!"
+    advice: "Waffles are pancakes with abs. So yeah, eat up!"
   },
 ]
 
 module.exports = {
 
-    create: (req,res) => {
-        const {category, title, advice} = req.body;
-        advice.push({category, title, advice})
-        res.status(200).send(advice)
+    getAdvice: (req,res) => {
+    const letter = req.params.inputLetter
+    let id = 0
+    console.log(req.params.inputLetter)
+    if (letter >='a' && letter <='c'){
+        id=5
+    } else if(letter >='d' && letter <='f'){
+        id=6
+    }else if(letter >='g' && letter <='i'){
+    console.log('nope')
+        id=7
+    }else if(letter >='j' && letter <='l'){
+        id=8
+    }else if(letter >='m' && letter <='o'){
+        console.log('hit')
+        id=9
+    }else if(letter >='p' && letter <='r'){
+        id=10
+    }else if(letter >='s' && letter <='z'){
+        id=11
+    }
+    advice.forEach((e) =>{
+        if(e.id===id){
+            res.status(200).send(e)
+        }
+    })
+         
     },
     read: (req,res) => {
         res.status(200).send(advice)
+
     },
     update: (req,res) => {
+
 
     },
     delete: (req,res) => {
