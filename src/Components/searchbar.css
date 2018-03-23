@@ -1,0 +1,17 @@
+.searchline{
+    display:flex;
+}
+
+.searchbar{
+    height:50px;
+    width:300px;
+    margin-left:25px;
+    border-radius: 5px;
+    border:2px solid gray;
+    font-size: 1.25em;
+    margin-top: 25px;
+    flex:1
+}
+.inputsubmit{
+    flex:2
+}

@@ -1,0 +1,22 @@
+.header{
+background-color: red;
+}
+.middle{
+    position: relative;
+    height:300px;
+    width: 100%;
+    overflow: hidden;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.graphic{
+    position: absolute;
+    top: 30px;
+    left:30px;
+    width: 30%;
+    height: auto;
+}
