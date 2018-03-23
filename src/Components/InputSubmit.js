@@ -6,9 +6,7 @@ class InputSubmit extends Component {
     
     return (
       <div className="inputsubmit">
-        <div>
-       </div>
-       
+       <button className="submitbutton">Get Advice</button>
       </div>
     );
   }

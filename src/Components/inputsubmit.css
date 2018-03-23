@@ -1,5 +1,7 @@
-.submit{
-    height: 50px;
-    width: 100px;
-    
+.submitbutton{
+    height:56px;
+    width:200px;
+    margin-top:25px;
+    border-radius: 5px;
+    border:2px solid gray;
 }

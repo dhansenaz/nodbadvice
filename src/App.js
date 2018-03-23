@@ -3,6 +3,8 @@ import './App.css';
 import Advice from './Components/Advice'
 import SearchBar from './Components/SearchBar'
 import Header from './Components/Header'
+import axios from 'axios'
+import InputSubmit from './Components/InputSubmit'
 
 
 class App extends Component {
@@ -49,17 +51,32 @@ class App extends Component {
       {
         category: "Roullete",
         title: "Waffles",
-        advice: "Yes, waffles are pancakes with abs. So eat up!"
+        advice: "Yes, waffles are pancakes with abs. So yeah, eat up!"
       },
       
     ]}
   }
+  componentDidMount(){
+    axios.get('/api/test')
+    .then(response => {
+      console.log(response)
+      this.setState( () => ({myAdvice: response.data}))
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
   render() {
     return (
       <div className="App">
-      <Header />
-      <SearchBar />
-      <Advice myAdvice={this.state.myAdvice}/>
+        <Header />
+          <div className="mid">
+            <div>
+              <SearchBar />
+              <InputSubmit />
+            </div>
+          </div>
+        <Advice />
       </div>
     );
   }

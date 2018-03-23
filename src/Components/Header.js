@@ -8,7 +8,8 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="middle">
-            <img className="image"src ="http://dri1.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL-Microsoft-Lumia-Talkman-Black-MF3-00001/PDP/en-INTL-Microsoft-Lumia-Talkman-Black-MF3-00001-Large2-desktop.jpg"></img>
+            <img className="image"
+            src="http://dri1.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL-Microsoft-Lumia-Talkman-Black-MF3-00001/PDP/en-INTL-Microsoft-Lumia-Talkman-Black-MF3-00001-Large2-desktop.jpg"></img>
             <img className="graphic" src={advicegraphic}></img>
         </div>
 
