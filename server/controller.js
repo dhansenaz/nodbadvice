@@ -10,7 +10,7 @@ let advice= [
     id:6,
     category: "Career",
     title: "Should I stay or should I go?",
-    advice: "Should I Stay or Should I Go, is a song by the English punk rock band the Clash. It was written in 1981 and featured Mick Jones on lead vocals. Go listen Now!"
+    advice: "Should I Stay or Should I Go, is a song by punk rock band the Clash. It was written in 1981. Go listen Now!"
   },
   {
     id:7,

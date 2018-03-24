@@ -1,6 +1,7 @@
 
 .body{
     margin: auto;
+    
 }
 
 
@@ -11,9 +12,9 @@
 .mid >div{
     display:flex;
 }
-.advice-display{
+/* .advice-display{
     background-color: red;
     height:250px;
     width:500px;
-    flex:1;
-}
+    flex:2;
+} */

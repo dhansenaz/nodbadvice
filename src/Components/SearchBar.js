@@ -29,9 +29,9 @@ axios.get(`/api/advice/${firstLetter}`)
       <div>
         <div className="searchline">
             <input className="searchbar" placeholder='  ask for advice here.....' onChange={(e) =>this.setState({advice:e.target.value})}/>
+        <InputSubmit handleSubmit={this.handleSubmit}/>
           
         </div>
-        <InputSubmit handleSubmit={this.handleSubmit}/>
       </div>
     );
   }

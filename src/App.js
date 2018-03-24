@@ -44,9 +44,10 @@ class App extends Component {
           <div className="mid">
             <div>
               <SearchBar updateAdvice = {this.updateAdvice}/>
+              
             </div>
             <div className="advice-display">
-              <AdviceDisplay />
+              <AdviceDisplay adviceObj={this.state.adviceObj}/>
             </div>
           </div>
         {/* <Advice advice = {this.state.advice}/> */}
