@@ -6,6 +6,8 @@ import Header from './Components/Header'
 import axios from 'axios'
 import InputSubmit from './Components/InputSubmit'
 import AdviceDisplay from './Components/AdviceDisplay'
+import TypeAdviceHere from './Components/TypeAdviceHere'
+import DisplayAllAdvice from './Components/DisplayAllAdvice'
 
 
 class App extends Component {
@@ -46,11 +48,18 @@ class App extends Component {
               <SearchBar updateAdvice = {this.updateAdvice}/>
               
             </div>
-            <div className="advice-display">
+                <div className="advice-display">
               <AdviceDisplay adviceObj={this.state.adviceObj}/>
+              </div>
+            <div>
+
+            </div>
+            <div>
+              <TypeAdviceHere />
             </div>
           </div>
         {/* <Advice advice = {this.state.advice}/> */}
+        <DisplayAllAdvice />
       </div>
     );
   }

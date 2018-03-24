@@ -1,4 +1,4 @@
-.submitbutton{
+.buttongiveadvice{
     height:56px;
     width:200px;
     margin-top:25px;
@@ -9,6 +9,6 @@
     font-size: 1.2em;
     color: dimgray
 }
-.submitbutton:hover{
-    color:rgb(20, 20, 20);
+.buttongiveadvice:hover{
+    color:rgb(19, 18, 18);
 }
