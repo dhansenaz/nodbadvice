@@ -17,7 +17,8 @@ class App extends Component {
     this.state = {
 
       advice: [],
-      adviceObj: {}
+      adviceObj: {},
+      addAdvice: {}
       
     }
 
@@ -36,6 +37,9 @@ class App extends Component {
   }
   updateAdvice(adviceObj){
     this.setState({adviceObj})
+  }
+  addAdvice(addAdvice){
+    this.setState({addAdvice})
   }
 
   render() {

@@ -9,19 +9,16 @@ class TypeAdviceHere extends Component {
   constructor(){
     super()
 
-//     this.state = {
-//       sendAdvice: ''
-//     }
-//   this.handleSubmit = this.handleSubmit.bind(this)
-//   }
-//   handleSubmit(){
-//     let firstLetter = this.state.advice[0]
-// console.log(firstLetter)
-// axios.get(`/api/advice/${firstLetter}`)
-// .then(response => {
-//   console.log(response.data)
-//   this.props.updateAdvice(response.data)
-// })
+    this.state = {
+      sendAdvice: ''
+    }
+  this.handleSubmit = this.handleSubmit.bind(this)
+  }
+  handleSubmit(){
+console.log()
+.then(response => {
+ 
+})
   }
 
 

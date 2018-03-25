@@ -11,7 +11,8 @@ let advice= [
     category: "Career",
     title: "Should I stay or should I go?",
     advice: "Should I Stay or Should I Go, is a song by punk rock band the Clash. It was written in 1981. Go listen Now!"
-  },
+  
+    },
   {
     id:7,
     category: "Relationship",
@@ -46,7 +47,7 @@ let advice= [
 ]
 
 module.exports = {
-
+// read
     getAdvice: (req,res) => {
     const letter = req.params.inputLetter
     let id = 0

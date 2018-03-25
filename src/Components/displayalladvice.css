@@ -1,3 +1,6 @@
+.displayall{
+    display:flex;
+}
 .displayalladvice{
     height:56px;
     width:500px;
@@ -8,6 +11,20 @@
     font-family: Impact;
     font-size: 1.2em;
     color: rgb(155, 153, 153);
+    flex-direction: row
+    
+}
+.alladvice{
+    height:500px;
+    width: 800px;
+    flex-direction: row;
+    margin-left:20px;
+    margin-top: -275px;
+    text-justify: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .15em;
+    line-height: 1.5em;
     
 }
 .displayalladvice:hover{
