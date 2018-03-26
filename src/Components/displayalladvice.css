@@ -1,5 +1,14 @@
-.displayall{
+/* .displayall{
     display:flex;
+    
+} */
+.alladvicecontainer{
+    background-color: rgb(201, 199, 199);
+    margin-top:-420px;
+    margin-left: 550px;
+    border-radius: 40px;
+    border:solid 2px gray;
+    flex:row;
 }
 .displayalladvice{
     height:56px;
@@ -15,11 +24,11 @@
     
 }
 .alladvice{
-    height:500px;
+    height:400px;
     width: 800px;
     flex-direction: row;
-    margin-left:50px;
-    margin-top: -270px;
+    margin-left:2px;
+    margin-top: 30px;
     text-justify:left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -27,8 +36,20 @@
     line-height: 1.5em;
     
 }
+.consultant{
+    margin-left:1100px;
+    margin-top:-420px;
+    height: 300px;
+    width:250px;
+}
 .displayalladvice:hover{
 color: rgb(32, 32, 32);
 
+}
+.delete{
+    border-radius: 10px;
+    background-color: rgb(253, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    border:none
 }
 

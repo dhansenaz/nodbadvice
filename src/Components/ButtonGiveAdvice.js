@@ -3,15 +3,19 @@ import './buttongiveadvice.css'
 import axios from 'axios'
 
 class ButtonGiveAdvice extends Component {
+constructor(){
+  super()
 
+  this.handleSubmit = this.handleSubmit.bind(this)
+  
+}
   handleSubmit(){
-    console.log(this.props)
-    var id = this.state.props.advice.id
-    axios.put(`/api/advice/edit/${id}`)
+    // var id = this.state.props.advice.id
+    axios.post('/api/advice/create',{advice:this.props.sendAdvice })
     .then(response => {
-     this.props.advice.push()
+      console.log(response)
+      this.props.sendAdvice
     })
-    this.handleSubmit = this.handleSubmit.bind(this)
     
       }
       shouldComponentUpdate(nextProps){
@@ -26,8 +30,7 @@ class ButtonGiveAdvice extends Component {
     console.log(this.props)
     return (
       <div className="inputsubmit">
-       <button onClick = {this.props.handleSubmit} className="buttongiveadvice">Give Advice</button>
-          <button className="buttongiveadvice">Give Advice</button>
+       <button onClick = {this.handleSubmit} className="buttongiveadvice">Give Advice</button>
       </div>
     );
   }

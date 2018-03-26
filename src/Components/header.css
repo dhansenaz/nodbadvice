@@ -1,9 +1,11 @@
 .header{
 background-color: red;
+border-bottom: 2px solid rgb(10, 10, 10)
+
 }
 .middle{
     position: relative;
-    height:45vh;
+    height:47vh;
     width: 100%;
     overflow: hidden;
 }
@@ -16,7 +18,7 @@ background-color: red;
 .graphic{
     position: absolute;
     top: 35px;
-    left:80px;
+    left:50px;
     width: 30%;
     height: auto;
 }

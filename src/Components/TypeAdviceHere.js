@@ -21,8 +21,8 @@ class TypeAdviceHere extends Component {
       <div>
       
         <div className="typehereline">
-          <input className="typeadvicehere" placeholder='  give your advice here...' onChange={(e) => this.setState({sendAdvice:e.target.value}) }/>
-          <ButtonGiveAdvice sendAdvice = {this.props.sendAdvice}/>
+          <input className="typeadvicehere" placeholder='  give your advice here...' onChange={(e) => this.setState({sendAdvice: e.target.value}) }/>
+          <ButtonGiveAdvice sendAdvice = {this.state.sendAdvice}/>
         </div>
       </div>
     );
