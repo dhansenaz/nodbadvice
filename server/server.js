@@ -10,6 +10,6 @@ app.use(bodyParser.json());
 app.get('/api/advice', ctrl.read)
 app.get('/api/advice/:inputLetter', ctrl.getAdvice)
 
-// app.post('/api/advice', ctrl.post)
+app.put('/api/advice/edit/:id', ctrl.update)
 
 app.listen(PORT, () => console.log("You are running on port 4000"))

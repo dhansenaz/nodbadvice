@@ -11,29 +11,18 @@ class TypeAdviceHere extends Component {
 
     this.state = {
       sendAdvice: ''
+    
     }
-  this.handleSubmit = this.handleSubmit.bind(this)
   }
-  handleSubmit(){
-console.log()
-.then(response => {
- 
-})
-  }
-
-
+  
   render() {
     
     return (
       <div>
-        {/* <div className="searchline">
-            <input className="searchbar" placeholder='  ask for advice here.....' onChange={(e) =>this.setState({advice:e.target.value})}/>
-        <InputSubmit handleSubmit={this.handleSubmit}/>
-          
-        </div> */}
+      
         <div className="typehereline">
-          <input className="typeadvicehere" placeholder='  give your advice here...' />
-          <ButtonGiveAdvice />
+          <input className="typeadvicehere" placeholder='  give your advice here...' onChange={(e) => this.setState({sendAdvice:e.target.value}) }/>
+          <ButtonGiveAdvice sendAdvice = {this.props.sendAdvice}/>
         </div>
       </div>
     );
