@@ -1,14 +1,16 @@
-.submitbutton{
-    height:56px;
-    width:200px;
-    margin-top:25px;
-    margin-left:25px;
-    border-radius: 5px;
-    border:2px solid gray;
-    font-family: Impact;
-    font-size: 1.2em;
-    color: dimgray
+.submitbutton {
+  height: 56px;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  font-family: Impact;
+  font-size: 1.4em;
+  color: dimgray;
+  text-shadow: 0.4px 0.4px 0.4px #fff, 1px 1px 1px rgb(131, 129, 129);
 }
-.submitbutton:hover{
-    color:rgb(20, 20, 20);
+.submitbutton:hover {
+  color: rgb(20, 20, 20);
+  cursor: pointer;
 }

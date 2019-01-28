@@ -2,54 +2,70 @@
     display:flex;
     
 } */
-.alladvicecontainer{
-    background-color: rgb(201, 199, 199);
-    margin-top:-420px;
-    margin-left: 550px;
-    border-radius: 40px;
-    border:solid 2px gray;
-    flex:row;
+.alladvicecontainer {
+  background-color: rgb(201, 199, 199);
+  margin-top: -420px;
+  margin-left: 550px;
+  border-radius: 40px;
+  border: solid 2px gray;
+  flex: row;
+  margin-right: 25px;
 }
-.displayalladvice{
-    height:56px;
-    width:500px;
-    margin-top:25px;
-    margin-left:25px;
-    border-radius: 5px;
-    border:2px solid gray;
-    font-family: Impact;
-    font-size: 1.2em;
-    color: rgb(155, 153, 153);
-    flex-direction: row
-    
+.displayalladvice {
+  height: 56px;
+  width: 500px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  font-family: Impact;
+  font-size: 1em;
+  color: rgb(155, 153, 153);
+  flex-direction: row;
+  cursor: pointer;
 }
-.alladvice{
-    height:400px;
-    width: 800px;
-    flex-direction: row;
-    margin-left:2px;
-    margin-top: 30px;
-    text-justify:left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    letter-spacing: .15em;
-    line-height: 1.5em;
-    
+.alladvice {
+  height: 400px;
+  width: 800px;
+  flex-direction: row;
+  margin-left: 2px;
+  margin-top: 30px;
+  text-justify: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
+  line-height: 1.5em;
 }
-.consultant{
-    margin-left:1100px;
-    margin-top:-420px;
-    height: 300px;
-    width:250px;
+.consultant {
+  margin-left: 1000px;
+  margin-top: -420px;
+  height: 300px;
+  width: 250px;
 }
-.displayalladvice:hover{
-color: rgb(32, 32, 32);
-
+.displayalladvice:hover {
+  color: rgb(32, 32, 32);
 }
-.delete{
-    border-radius: 10px;
-    background-color: rgb(253, 43, 43);
-    font-family: Arial, Helvetica, sans-serif;
-    border:none
+.delete {
+  border-radius: 10px;
+  background-color: rgb(194, 193, 193);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  font-size: 0.4em;
 }
-
+.edit {
+  border-radius: 10px;
+  background-color: rgb(194, 193, 193);
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  font-size: 0.4em;
+}
+.edit:hover {
+  transform: scale(1.1);
+  background-color: rgb(99, 81, 255);
+  cursor: pointer;
+}
+.delete:hover {
+  transform: scale(1.1);
+  background-color: rgb(253, 43, 43);
+  cursor: pointer;
+}

@@ -10,7 +10,7 @@ let advice = [
         id: 6,
         category: "Career",
         title: "Should I stay or should I go?",
-        advice: "Should I Stay or Should I Go, is a song by punk rock band the Clash. It was written in 1981. Go listen Now!"
+        advice: "Should I Stay or Should I Go, is a song by punk rock band the Clash. It was written in 1981."
 
     },
     {
@@ -103,5 +103,19 @@ module.exports = {
         }
         res.status(200).send(advice)
         console.log(advice) 
-    }
+    },
+    update: (req, res)=>{
+        let id = req.params.id;
+
+        let updateAdvice = advice.find((updateAdvice) => updateAdvice.id==id);
+        updateAdvice.category = 'I dont think so'
+        updateAdvice.title = 'Nope'
+        updateAdvice.advice = "Worst advice ever!!!!";
+       
+
+        res.status(200).send(advice);
+        console.log('update-----------------------', updateAdvice)
+    
+    
+}
 }

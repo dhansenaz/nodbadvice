@@ -1,20 +1,16 @@
-.advice-container{
-    background-color:rgb(201, 199, 199);
-    width:500px;
-    height:175px;
-    border-radius: 10px;
-    border: 2px solid gray
-
-    
+.advice-container {
+  background-color: rgb(201, 199, 199);
+  width: 500px;
+  height: 175px;
+  border-radius: 10px;
+  border: 2px solid gray;
 }
-.advice-display{
-    /* background-color: gold; */
-    padding-top:20px;
-    margin: 0 auto;
-    font-size:1.4em;
-    margin-left:25px;
-
+.advice-display {
+  /* background-color: gold; */
+  padding-top: 20px;
+  margin: 0 auto;
+  font-size: 1.4em;
+  margin-left: 25px;
 }
-.advice-display span{
-
+.advice-display span {
 }

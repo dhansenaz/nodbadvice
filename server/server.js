@@ -12,5 +12,7 @@ app.get('/api/advice/:inputLetter', ctrl.getAdvice)
 
 app.post('/api/advice/create', ctrl.createAdvice)
 app.delete('/api/advice/deleteadvice/:id', ctrl.deleteAdvice)
+app.put('/api/advice/:id', ctrl.update)
+
 
 app.listen(PORT, () => console.log("You are running on port 4000"))

@@ -1,16 +1,13 @@
-
-.body{
-    margin: auto;
-    
+.body {
+  margin: auto;
 }
 
-
-.middle{
-    height:300px;
-    width:100%;
+.middle {
+  height: 300px;
+  width: 100%;
 }
-.mid >div{
-    display:flex;
+.mid > div {
+  display: flex;
 }
 /* .advice-display{
     background-color: red;
